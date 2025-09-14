@@ -7,7 +7,7 @@ on:
       - main
 
 env:
-  AZURE_WEBAPP_NAME: "Time API"
+  AZURE_WEBAPP_NAME: "time-service"
   AZURE_WEBAPP_PACKAGE_PATH: "./src/Time.API/publish"
   DOTNET_VERSION: "9.0.x"
   API_PROJECT_PATH: "./src/Time.API/Time.API.csproj"
@@ -61,5 +61,4 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          slot-name: 'staging'
           package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
