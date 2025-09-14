@@ -7,12 +7,12 @@ on:
       - main
 
 env:
-  AZURE_WEBAPP_NAME: "time-apiweb-testing"
-  AZURE_WEBAPP_PACKAGE_PATH: "./time-apiweb-testing/publish"
-  DOTNET_VERSION: "9.0.x"
-  API_PROJECT_PATH: "./time-apiweb-testing/time-apiweb-testing.csproj"
-  SOLUTION_PATH: "./time-apiweb-testing.sln"
-  PUBLISH_DIR: "./publish"
+  AZURE_WEBAPP_NAME: "{{SAME NAME OF YOUR AZURE WEB APP}}"
+  AZURE_WEBAPP_PACKAGE_PATH: "" # Adjust if your solution file is in a different location
+  DOTNET_VERSION: "9.0.x" 
+  API_PROJECT_PATH: "*.csproj" # Adjust if your solution file is in a different location
+  SOLUTION_PATH: ".*.sln" # Adjust if your solution file is in a different location
+  PUBLISH_DIR: "./publish" # Adjust if your solution file is in a different location
 
 jobs:
   build-and-test:
