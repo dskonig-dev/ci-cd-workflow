@@ -10,7 +10,7 @@ env:
   AZURE_WEBAPP_NAME: "Time API"
   AZURE_WEBAPP_PACKAGE_PATH: "./src/time.API/publish"
   DOTNET_VERSION: "9.0.x"
-  API_PROJECT_PATH: "./src/time.API/Time.API.csproj"
+  API_PROJECT_PATH: "./ci-cd-workflow/src/time.API/Time.API.csproj"
   SOLUTION_PATH: "./TimeServiceSolution.sln"
   PUBLISH_DIR: "./publish"
 
