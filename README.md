@@ -30,9 +30,9 @@ To contribute or trigger the CI/CD workflows:
 - A supported .NET SDK (the project targets .NET 9).
 - Appropriate permissions and secrets configured for deployment targets (e.g., Azure credentials).
 
-## Support
+## Based
 
-For questions or issues related to the CI/CD process, please open an issue in this repository.
+This repository follows practices shared by [Milan Jovanovic]( https://github.com/m-jovanovic)
 
 ---
 
